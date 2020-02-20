@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    cursor: default;
+}
+p {
+    margin: 0;
+    font-family: 'Krona One', sans-serif;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+li {
+    list-style: none;
+    margin: 15px;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Krona One', sans-serif;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-header {
+    .header-cont {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: #52247F;
+        padding: 10px;
+        .logo-img {
+            margin-right: 30px;
+            .img-cont {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .logo-text {
+            h1 {
+                color: #000000;
+                letter-spacing: 3px;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            justify-content: center;
+            .logo-img {
+                margin-right: 0;
+            }
+            .logo-text {
+                display: none;
+            }
+        }
+    }
+}
+.banner-carousel {
+    position: relative;
+    .carousel-cell {
+        width: 100%;
+    }
+    .banner-img-desk {
+        width: 100%;
+        height: 600px;
+        .img-cont {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .banner-details {
+        display: block;
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        background: rgba(253, 184, 39, 0.4);
+        padding: 20px;
+        border: 3px solid rgba(253, 184, 39, 0.4);
+        border-radius: 10px;
+        .banner-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h1 {
+                font-size: 48px;
+                color: #000000;
+                text-transform: lowercase;
+            }
+        }
+        .banner-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .btn {
+                padding: 10px;
+                width: 100px;
+                height: 100px;
+                border: 3px solid #000000;
+                border-radius: 50%;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                }
+                &:hover {
+                    background: #542583;
+                    transition: all 0.4s;
+                }
+            }
+        }
+        .carousel-nav {
+            height: 100%;
+        }
+        .carousel-nav-cell {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        @media screen and (max-width: 991px) {
+            width: 50%;
+            top: 5%;
+            left: 25%;
+            right: 25%;
+        }
+        @media screen and (max-width: 767px) {
+            position: unset;
+            width: 100%;
+            border-radius: 0;
+            background: #FDB827;
+            border: 1px solid #FDB827;
+        }
+    }
+    .flickity-button {
+        background: 0;
+        @media screen and (max-width: 767px) {
+            background: #FDB827;
+        }
+    }
+    .flickity-prev-next-button {
+        color: #542583;
+        width: 100px;
+        height: 100px;
+        @media screen and (max-width: 767px) {
+            border-radius: 0;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .flickity-page-dots {
+        bottom: 10%;
+        .dot {
+            height: 10px;
+            width: 40px;
+            margin: 0;
+            border-radius: 0;
+            background: #542583;
+            &:nth-child(2n) {
+                background: #FDB827;
+            }
+        }
+    }
+}
+.main-footer {
+    background: #FDB827;
+    padding: 28px;
+}

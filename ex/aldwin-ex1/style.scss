@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.drum-kit {
+    background: url('./images/drum-kit-bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 320px 0;
+}
+.keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid #FDB827;
+    width: 120px;
+    height: 120px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    transition: all .2s ease;
+    strong {
+        margin-bottom: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 48px;
+        color: #542583;
+
+    }
+    span {
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+    }
+}
+.playing {
+    transform: scale(1.5);
+    border: 10px solid #542583;
+}
